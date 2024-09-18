@@ -1,0 +1,161 @@
+@media (max-width:1020px) {
+
+    nav {
+        max-width: 100%;
+        /* justify-content: space-between; */
+    }
+
+    .hammburger_section .hamburger-nav {
+        padding: inherit;
+        display: none;
+    }
+
+    .pro {
+        display: none;
+    }
+
+    .watchlist {
+        display: none;
+    }
+
+    form input {
+        width: 30rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .media-hmaburger img {
+        display: inline-block;
+    }
+
+    .use-btn a {
+        display: inline;
+    }
+
+    .media-haminfo {
+        display: inline;
+        width: 50%;
+    }
+
+    .pro2 {
+        display: inline;
+        border: none;
+        padding: 0;
+    }
+ 
+}
+
+@media (max-width:1050px) {
+    form input {
+        width: 100%;
+    }
+
+    .right_hero {
+        display: none;
+    }
+
+    .left_hero {
+       width: 100%;
+       height: auto;
+    }
+
+    .hero {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width:660px) {
+    nav {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    form {
+        display: none;
+    }
+
+    .main-logo {
+        display: none;
+    }
+
+    .signin {
+        display: none;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .use-btn .in {
+        display: inline;
+    }
+
+    .media-hmaburger .media-logo {
+        display: inline;
+    }
+
+    .use-btn i {
+        color: white;
+    }
+
+    .media-hmaburger {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .use-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .media-haminfo {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .pro2 {
+        display: inline;
+        border: none;
+        padding: 0;
+    }
+
+    .small-info h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    .play2 i {
+        font-size: 2rem;
+        margin-left: 0.2rem;
+    }
+
+    .hero {
+        padding: 0.2rem;
+    }
+
+    .small-info {
+        margin-top: 7rem;
+        margin-left: 0.2rem;
+    }
+
+    /* .small-control img {
+        width: 5rem;
+    } */
+}
+
+@media (max-width: 450px) {
+    .small-info h3 small{
+        display: none;
+    }
+    .small-info p{
+        font-size: 0.9rem;
+    }
+    .small-info h3 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.invert {
+    filter: invert(1);
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hamburger p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-left: .25rem;
+}
+
+form {
+    display: flex;
+}
+
+form select {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-right: 1px solid gray;
+    appearance: none;
+    background-image: url('images/down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+    background-size: 1.5rem;
+    padding-right: 2rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+form input {
+    border: none;
+    width: 38rem;
+    padding: 0 0.5rem;
+}
+
+.search {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+form:active {
+    outline: 3px solid yellow;
+    border-radius: 2px;
+}
+
+.pro {
+    border-right: 1px solid gray;
+    padding-right: 1rem;
+}
+
+.pro a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.2;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+}
+
+.pro span {
+    color: rgb(228, 8, 202);
+}
+
+.watchlist {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.watchlist p {
+    margin-left: 0.25rem;
+    font-weight: 700;
+}
+
+.signin a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+#check {
+    display: none;
+}
+
+.hamburger_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #222121;
+    position: absolute;
+    z-index: 10;
+    top: -200vh;
+    transition: top 0.4s linear;
+    /* Add transition for a smooth effect */
+}
+
+#check:checked~.hamburger_section {
+    top: 0;
+}
+
+.hover {
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hover:hover {
+    background-color: rgb(43, 42, 42);
+}
+
+.hamburger-nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 2rem;
+}
+
+.hamburger-nav .logo {
+    width: 6rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.heading i {
+    color: #f5c518;
+    font-size: 24px;
+}
+
+.hamburger-nav label i {
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    background-color: #f5c518;
+    border-radius: 50%;
+}
+
+.hamburger-nav label i:hover {
+    background-color: #cdac35;
+}
+
+.hamburger-info {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .hamburger-info .info ul{
+   
+} */
+
+.hamburger-info .info ul li {
+    list-style: none;
+    line-height: 2.2rem;
+    padding: 0 4rem;
+}
+
+.hamburger-info .info ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-info .info ul li a:hover {
+    text-decoration: underline;
+}
+
+.in-info2 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.in-info3 {
+    margin-top: 2rem;
+}
+
+.fa-star {
+    background-color: #f5c518;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.media-hmaburger img {
+    display: none;
+}
+
+.use-btn .in {
+    text-decoration: none;
+    color: white;
+    margin-right: 3px;
+}
+
+.use {
+    padding: 0.5rem 1rem;
+    background-color: #f1c114;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: none;
+}
+
+.use-btn .in {
+    display: none;
+}
+
+.media-hmaburger .media-logo {
+    display: none;
+}
+
+.media-haminfo {
+    width: 75%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -600px;
+    z-index: 1;
+    background-color: #222121;
+    ;
+    transition: left 0.3s linear;
+    display: none;
+}
+
+#check2 {
+    display: none;
+}
+
+#check2:checked~.media-haminfo {
+    left: 0;
+}
+
+.heading2 i {
+    font-size: 20px;
+    color: rgb(191, 187, 187);
+}
+
+.heading2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0.8rem;
+}
+
+.heading2 h3 {
+    font-weight: normal;
+    display: inline-flex;
+    gap: 15px;
+}
+
+/* .ham-info{
+    margin-top: 40px;
+} */
+.heading2 .down {
+    font-size: 16px;
+}
+
+.media-haminfo label {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid gray;
+}
+
+.media-haminfo label i {
+    color: rgb(255, 243, 243);
+    padding: 1rem 0.8rem;
+    font-size: 25px;
+}
+
+.ham-info2 {
+    padding: 1rem 0.5rem;
+    margin-top: 20px;
+}
+
+.pro2 p {
+    margin-left: 6px;
+    color: white;
+}
+
+.lang {
+    padding: 1rem 0.5rem;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lang span {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.lang p {
+    margin-top: 6px;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7rem;
+}
+.left_hero{
+    width: 65%;
+    padding: 1rem;
+    position: relative;
+}
+.left_hero img{
+    width: 100%;
+}
+.right_hero{
+    width: 35%;
+}
+.hero_set{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: red; */
+    margin-top: 0.5rem;
+}
+.hero_set .set_img img{
+    width: 90px;
+    border-radius: 10px;
+}
+.set_info {
+    color: white;
+}
+.text{
+    margin-block: 0.5rem;
+}
+.play i{
+    font-size: 2.5rem;
+}
+.text p{
+    line-height: 1.6;
+}
+.small-p{
+    font-size: 0.9rem;
+    color: rgb(199, 184, 184);
+}
+.big-p{
+    font-size: 1rem;
+}
+.right_hero h3{
+    color: orange;
+    margin: 1rem 0 1rem 0;
+}
+.small-control{
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+     background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+     opacity: 5.5;
+}
+/* .small-control img{
+    width: 10rem;
+} */
+.small-info{
+   margin-top: 7rem;
+   margin-left: 1rem;
+}
+.small-info h3 small{
+    color: gray;
+    font-size: 17px;
+    margin-left: 1rem;
+}
+.play2 i{
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+.small-info h3{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.small-info p{
+    font-size: 1.2rem;
+    color: rgb(186, 174, 174);
+}
+.play2{
+    margin-top: 6rem;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating img{
+    width: 24px;
+}
+.emojis{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    position: relative;
+}
+.emojis .clap{
+    position: absolute;
+    left: 10px;
+}
+.emojis small{
+    margin-left: .5rem;
+}
+.save{
+    position: absolute;
+    top: -8px;
+    left: -12px;
+}
+.save img{
+    width: 4rem;
+    opacity: 0.8;
+    z-index: 10;
+}
+.save img:hover{
+    opacity: 1;
+}
+.play2 i:hover{
+    color: orange;
+}
+.play i:hover{
+    color: orange;
+}
