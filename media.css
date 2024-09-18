@@ -135,13 +135,23 @@
 
     .hero {
         padding: 0.2rem;
+        height: 60vh;
+        position: relative;
     }
-
+    .left_hero{
+        position: absolute;
+        top: 0;
+        padding: 0.3rem;
+    }
     .small-info {
         margin-top: 7rem;
         margin-left: 0.2rem;
     }
-
+    .small-control{
+        width: 100%;
+        left: 0;
+        padding-left: 2px;
+    }
     /* .small-control img {
         width: 5rem;
     } */
@@ -157,5 +167,8 @@
     .small-info h3 {
         font-size: 1rem;
         font-weight: normal;
+    }
+    .small-control .small_img img{
+        width: 100%;
     }
 }
